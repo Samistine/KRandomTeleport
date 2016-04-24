@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.kmcguire.krandomteleport;
 
 import org.bukkit.Chunk;
@@ -18,27 +13,16 @@ import org.bukkit.event.block.SignChangeEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
-/**
- *
- * @author Samuel
- */
-public class KRandomTeleport extends JavaPlugin implements Listener {
+public final class KRandomTeleport extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
         getServer().getPluginManager().registerEvents(this, this);
     }
 
-    @Override
-    public void onDisable() {
-
-    }
-
     @EventHandler
     public void onSignChange(SignChangeEvent event) {
-        Player player;
-
-        player = event.getPlayer();
+        Player player = event.getPlayer();
 
         if (player == null) {
             return;
@@ -71,10 +55,7 @@ public class KRandomTeleport extends JavaPlugin implements Listener {
                 return;
             }
             player.sendMessage("[KRandomTeleport] The sign has been registered.");
-            return;
         }
-
-        return;
     }
 
     @EventHandler
@@ -133,10 +114,8 @@ public class KRandomTeleport extends JavaPlugin implements Listener {
             } while (location == null);
 
             player.sendMessage("[KRandomTeleport] Opps, try again. I could not grab a good location!");
-            return;
         }
         // no not the sign we are looking for
-        return;
     }
 
     public void teleportPlayer(Player p, Location l) {

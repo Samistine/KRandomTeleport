@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.samistine.mcplugins</groupId>
     <artifactId>KRandomTeleport</artifactId>
-    <version>1.0</version>
+    <version>Samistine_R1</version>
     <build>
         <finalName>KRandomTeleport</finalName>
         <resources>

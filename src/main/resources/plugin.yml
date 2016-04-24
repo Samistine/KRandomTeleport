@@ -1,5 +1,10 @@
 name: KRandomTeleport
-version: 1.0.134
+version: ${project.version}
+
+git_repo: https://github.com/Samistine/KRandomTeleport
+git_hash: ${git_hash}
+jenkins_build: ${BUILD_NUMBER}
+
 main: com.kmcguire.krandomteleport.KRandomTeleport
 authors: [Leonard Kevin McGuire Jr]
 softdepend: [Herochat]
