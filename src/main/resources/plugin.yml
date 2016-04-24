@@ -1,0 +1,5 @@
+name: KRandomTeleport
+version: 1.0.134
+main: com.kmcguire.KRandomTeleport.P
+authors: [Leonard Kevin McGuire Jr]
+softdepend: [Herochat]
