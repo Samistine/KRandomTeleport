@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.kmcguire.KRandomTeleport;
+package com.kmcguire.krandomteleport;
 
 import org.bukkit.Chunk;
 import org.bukkit.Location;
@@ -22,7 +22,7 @@ import org.bukkit.plugin.java.JavaPlugin;
  *
  * @author Samuel
  */
-public class P extends JavaPlugin implements Listener {
+public class KRandomTeleport extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
